@@ -7,58 +7,66 @@
 
                                 /* Первый экран лендинга */
 
-section{
-    padding: 37px 121px 160px;
+#hello{
+    background-image: url(../img/html_css_js.png);
+    background-repeat: no-repeat;
+    background-position: top 121px right 58px;
+    background-size: 30vw;
+    
 }
 
-.logo_tehnikom{
-    margin-bottom: 85px;
-    width: 295px;
-    height: 41px;
+section{
+    padding: 37px calc(24px + (112 - 24) * ((100vw - 375px) / (1280 - 375))) 160px; 
+}
+
+.logo_tehnikum{
+    width: calc(215px + (295 - 215) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(30px + (41 - 30) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(28px + (85 - 28) * ((100vw - 375px) / (1280 - 375)));
 }
 
 .info-date{
     display: flex;
     gap: 30px 161px;
     flex-wrap: wrap;
-    margin-bottom: 76px;
+    margin-bottom: calc(48px + (76 - 48) * ((100vw - 375px) / (1280 - 375)));
     
 }
 .info-text{
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    font-weight: 400;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 138%;
+    margin-bottom: calc(0px + (5 - 0) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.info-text2{
-    font-size: 21px;
+.info-text-date{
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 138%;
     font-weight: 700;
 }
 
 h1{
-   font-size: 80px;
+    font-size: calc(42px + (80 - 42) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 109%;
     font-family: "Chava";
-    margin-bottom: 40px;
-    font-weight: 400;
+    margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
 
 }
 
-.text {
-    width: 930px;
-    font-size: 27px;
+.text-prof {
+    width: calc(328px + (930 - 328) * ((100vw - 375px) / (1280 - 375)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 137%;
     margin-bottom: 20px;
     font-weight: 300;
-    line-height: 37px;
 }
 
-.button{
+.btn-container{
     display: flex;
     flex-wrap: wrap;
     gap: 20px 30px;
 
 }
-.button button{
+button{
     width: 328px;
     height: 61px;
     box-sizing: 1px;
@@ -70,8 +78,7 @@ h1{
     color: white;
 }
 
-.button
-.record-course{
+button.secondary{
     color: #6E3ABA;
     background-color: white;
 }
@@ -81,39 +88,32 @@ h1{
 
 .title{
     text-transform: uppercase;
-    width: 769px;
+    width: calc(328px + (769 - 328) * ((100vw - 375px) / (1280 - 375)));
     font-weight: 500;
-    font-size: 58px;
-    line-height: 68px;
-    letter-spacing: 1%;
-    margin-bottom: 90px;
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 117%;
+    margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
 }
 
-.mine-block-emoji{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-}
 
 .emoji{
-    width: 200px;
-    margin-bottom: 10px;
+    width: calc(175px + (200 - 175) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(10px + (23 - 10) * ((100vw - 375px) / (1280 - 375)));
 }
 
         /* Размер текста */
 
 .text-emoji-title{
     text-transform: uppercase;
-    font-size: 27px;
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     font-weight: 600;
-    line-height: 37px;
-    margin-bottom: 20px;
+    line-height: 137%;
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)));
 }
 .text-emoji{
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 37px;
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 137%;
 }
 
         /* Первый блок эмоджи */
@@ -123,18 +123,13 @@ h1{
     flex-wrap: wrap;
     gap: 40px 70px;
     
-    margin-bottom: 52px;
-    position:relative;
+    margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
 
 }
 
-.emoji-block-1 {
-    width: 450px;
-    height: 506px;
-}
-.emoji-block-2{
-    width: 450px;
-    height: 468px;
+.emoji-cart-block {
+    width: calc(328px + (450 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(350px + (506 - 350) * ((100vw - 375px) / (1280 - 375)));
 }
 
         /* Второй блок эмоджи */
@@ -142,25 +137,76 @@ h1{
 .second-block-emoji{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 88px;
+    gap: 40px 70px;
     
 }
 
 
-.emoji-block-3{
-    width: 432px;
-    height: 468px;
-    position:relative;
-}
-.emoji-block-4{
-    width: 477px;
-    height: 506px;
-    position:relative;
+/* Третий экран лендинга */
+
+.purpleBg{
+    background-color: #6E3ABA;
 }
 
+section.purpleBg{
+    text-align: center;
+    padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h3 {
+    font-size: calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 117%;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.timerElem .value{
+    font-family: "Chava";
+    font-size: calc(60px + (174 - 60) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 107%;
+    color: #2f1d4e;
+
+}
+
+.timerElem .desc{
+    font-size: calc(10px + (27 - 10) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 118%;
+    color: #2f1d4e;
+    text-transform: uppercase;
+}
 
 
+                                /* Пятый экран лендинга */
 
+
+.info-education>h2{
+    width: calc(328px + (1022 - 328) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (90 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.texst-block {
+    width: calc(328px + (400 - 328) * ((100vw - 375px) / (1280 - 375)));
+    
+}
+
+section>.first-block-emoji{
+    gap: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375))) 120px;
+    margin-bottom: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375)));;
+}
+
+section>.second-block-emoji{
+    gap: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375))) 120px;
+}
 
 
 
