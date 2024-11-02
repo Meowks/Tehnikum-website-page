@@ -1,0 +1,31 @@
+function calcTimer() {
+    let today = new Date()
+    let saleDeadline = new Date(2024, 10, 5)
+    let delta = (saleDeadline - today)/1000
+    delta = Math.trunc(delta)
+
+    console.log(delta)
+
+    let hours = Math.trunc(delta/3600)
+    let minets = Math.trunc(delta/60) - hours*60
+    let seconds = delta - hours*60*60 - minets*60
+    let hoursElem = document.getElementById("timerHours")
+    let minetsElem = document.getElementById("timerMinets")
+    let secondsElem = document.getElementById("timerSeconds")
+    hoursElem.innerHTML = twoDigits(hours)
+    minetsElem.innerHTML = twoDigits(minets)
+    secondsElem.innerHTML = twoDigits(seconds)
+
+}
+
+calcTimer()
+setInterval(calcTimer, 1000)
+
+
+function twoDigits(num) {
+    if(num<10) {
+        return "0" + num
+    } else {
+        return num
+    }
+}

@@ -16,7 +16,8 @@
 }
 
 section{
-    padding: 37px calc(24px + (112 - 24) * ((100vw - 375px) / (1280 - 375))) 160px; 
+    padding: 0 calc(24px + (112 - 24) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: 160px; 
 }
 
 .logo_tehnikum{
@@ -142,7 +143,7 @@ button.secondary{
 }
 
 
-/* Третий экран лендинга */
+                            /* Третий экран лендинга Таймер */
 
 .purpleBg{
     background-color: #6E3ABA;
@@ -174,7 +175,6 @@ h3 {
     font-size: calc(60px + (174 - 60) * ((100vw - 375px) / (1280 - 375)));
     line-height: 107%;
     color: #2f1d4e;
-
 }
 
 .timerElem .desc{
@@ -184,6 +184,71 @@ h3 {
     color: #2f1d4e;
     text-transform: uppercase;
 }
+
+                                /* Четвертый экран лендинга */
+
+.bio{
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coolTeacher{
+    flex-basis: 330px;
+    flex-grow: 1;
+    max-width: 400px;
+}
+.coolTeacher img{
+    width: 100%;
+}
+
+.bioText{
+    flex-basis: 330px;
+    flex-grow: 3;
+    max-width: 650px;
+}
+
+.bioText h4{
+    font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 126%;
+    width: calc(341px + (566 - 341) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(10px + (20 - 10) * ((100vw - 375px) / (1280 - 375)))
+}
+.bioText p{
+    width: calc(328px + (566 - 328) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.experiense{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.exp{
+    width: calc(156px + (250 - 156) * ((100vw - 375px) / (1280 - 375)));
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+}
+.exp img{
+    width: 36px;
+}
+.exp span{
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));  
+    line-height: 138%;
+}
+#hyphenation-correction{
+    width: calc(156px + (225 - 156) * ((100vw - 375px) / (1280 - 375)));
+}
+
+
+
+
 
 
                                 /* Пятый экран лендинга */
