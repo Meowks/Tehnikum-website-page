@@ -324,11 +324,12 @@ section>.second-block-emoji{
     height: calc(120px + (136 - 120) * ((100vw - 375px) / (1280 - 375)));
 }
 
-
-.diploma-text{
+ 
+#diploma-text{
     font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     line-height: 137%;
     width: calc(328px + (514 - 328) * ((100vw - 375px) / (1280 - 375)));
+    grid-column-start: 2;
     grid-column-end: 3;
 }
 
