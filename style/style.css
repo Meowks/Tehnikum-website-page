@@ -5,7 +5,24 @@
     font-family: "TT Hoves";
 }
 
-                                /* Первый экран лендинга */
+                        /* Базовые значения */
+
+.title-base{
+    text-transform: uppercase;
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 117%;
+    font-weight: 500;
+}
+
+.text-base{
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 137%;
+}
+
+
+
+
+                                    /* Первый экран лендинга */
 
 #hello{
     background-image: url(../img/html_css_js.png);
@@ -85,8 +102,9 @@ button.secondary{
 }
 
 
-                                /* Второй экран лендинга */
+                                    /* Второй экран лендинга */
 
+          
 .title{
     text-transform: uppercase;
     width: calc(328px + (769 - 328) * ((100vw - 375px) / (1280 - 375)));
@@ -122,7 +140,7 @@ button.secondary{
 .first-block-emoji{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 70px;
+    gap: 40px calc(40px + (70 - 40) * ((100vw - 375px) / (1280 - 375)));
     
     margin-bottom: calc(40px + (52 - 40) * ((100vw - 375px) / (1280 - 375)));
 
@@ -131,6 +149,9 @@ button.secondary{
 .emoji-cart-block {
     width: calc(328px + (450 - 328) * ((100vw - 375px) / (1280 - 375)));
     height: calc(350px + (506 - 350) * ((100vw - 375px) / (1280 - 375)));
+    flex-basis: 328px;
+    flex-grow: 1;
+    max-width: 450px;
 }
 
         /* Второй блок эмоджи */
@@ -143,7 +164,7 @@ button.secondary{
 }
 
 
-                            /* Третий экран лендинга Таймер */
+                                /* Третий экран лендинга Таймер */
 
 .purpleBg{
     background-color: #6E3ABA;
@@ -185,7 +206,7 @@ h3 {
     text-transform: uppercase;
 }
 
-                                /* Четвертый экран лендинга */
+                                    /* Четвертый экран лендинга */
 
 .bio{
     display: flex;
@@ -195,7 +216,7 @@ h3 {
 }
 
 .coolTeacher{
-    flex-basis: 330px;
+    flex-basis: 240px;
     flex-grow: 1;
     max-width: 400px;
 }
@@ -251,7 +272,7 @@ h3 {
 
 
 
-                                /* Пятый экран лендинга */
+                                    /* Пятый экран лендинга */
 
 
 .info-education>h2{
@@ -266,12 +287,126 @@ h3 {
 
 section>.first-block-emoji{
     gap: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375))) 120px;
-    margin-bottom: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375)));;
+    margin-bottom: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375)));
 }
 
 section>.second-block-emoji{
     gap: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375))) 120px;
 }
+
+
+                                    /* Седьмой экран лендинга */
+
+.diploma{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 50%;
+    gap: 20px;
+}
+
+
+.diplomaImg{   
+    flex-basis: 327px;
+    flex-grow: 1;
+    max-width: 430px;
+}
+
+.diplomaImg img{
+    width: 100%;
+}
+
+.diploma-title{
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+    text-transform: uppercase;
+    width: calc(328px + (578 - 328) * ((100vw - 375px) / (1280 - 375)));
+    height: calc(120px + (136 - 120) * ((100vw - 375px) / (1280 - 375)));
+}
+
+
+.diploma-text{
+    font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 137%;
+    width: calc(328px + (514 - 328) * ((100vw - 375px) / (1280 - 375)));
+    grid-column-end: 3;
+}
+
+                                    /* Восьмой экран лендинга */
+ 
+#hhJob h2{
+    width: calc(328px + (729 - 328) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+#hhJob p{
+    width: calc(328px + (876 - 328) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (36 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+#hhJob span{
+    font-weight: 700;
+}
+
+#hhImg {
+    flex-basis: 328px;
+    flex-grow: 1;
+    max-width: 1065px;
+}
+#hhImg img{
+    width: 100%;
+}
+
+                                    /* Девятый экран лендинга */
+
+
+#present-mine{
+
+}
+
+#present-mine h2{
+    margin-bottom: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.present{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.presentImg{
+    flex-basis: 406px;
+    flex-grow: 1;
+    max-width: 579px;
+}
+.presentImg img{
+    width: 100%;
+}
+
+.present-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px 25px;
+    flex-basis: 328px;
+    flex-grow: 3;
+    max-width: 520px;
+    height: calc(215px + (224 - 215) * ((100vw - 375px) / (1280 - 375)));
+    
+}
+
+.present-text{
+    font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 117%;
+}
+
+
+
+
+
+
+
+
 
 
 

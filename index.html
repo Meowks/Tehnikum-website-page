@@ -1,212 +1,301 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layot</title>
-    <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./style/style.css" />
-    <!-- <link rel="stylesheet" href="./img/"> -->
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layot</title>
+  <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet" />
 
-  <body>
-    <main>
-      <!-- Первый экран лендинга -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- <link rel="stylesheet" href="./img/"> -->
+  <link rel="stylesheet" href="./fonts/stylesheet.css" />
+</head>
 
-      <section id="hello">
-        <div class="logo_tehnikom">
-          <img src="./img/logo_tehnikom.png" class="logo_tehnikum" alt="" />
+<body>
+  <main>
+    <!-- Первый экран лендинга -->
+
+    <section id="hello">
+      <div class="logo_tehnikom">
+        <img src="./img/logo_tehnikom.png" class="logo_tehnikum" alt="" />
+      </div>
+
+      <div class="info-date">
+        <div>
+          <p class="info-text">старт</p>
+          <p class="info-text-date">1 декабря</p>
+        </div>
+        <div>
+          <p class="info-text">длительность</p>
+          <p class="info-text-date">2 месяца | 24 занятия</p>
+        </div>
+      </div>
+
+      <h1>HTML, CSS, JS</h1>
+
+      <p class="text-prof">
+        Верстальщик – это специалист, который кодит страницы web-сайтов,
+        разбивает текст на отдельные страницы, компонует его с иллюстрациями.
+        Он умеет создавать HTML-шаблоны для веб-сайтов и писать HTML-код,
+        знает, как графически оформить страницу и правильно расположить на ней
+        элемент, и знаком со стилями
+      </p>
+
+      <div class="btn-container">
+        <button class="first-button">Получить программу курса</button>
+        <button class="secondary">Записаться на курс</button>
+      </div>
+    </section>
+
+    <!-- Второй экран лендинга -->
+
+    <section>
+      <h2 class="title">Этот курс для тебя, если ты...</h2>
+
+      <div class="first-block-emoji">
+        <div class="emoji-cart-block">
+          <img class="emoji" src="./img/beard_emoji.png" alt="" />
+          <p class="text-emoji-title">Backend разработчик</p>
+          <p class="text-emoji">
+            Если ты уже владеешь навыками Backend разработки, то изучив HTML,
+            CSS, JavaScript получишь базу, чтобы начать изучение frontend и
+            встать на путь full-stack разработчика
+          </p>
         </div>
 
-        <div class="info-date">
+        <div class="emoji-cart-block">
+          <img class="emoji" src="./img/glasses_emoji.png" alt="" />
+          <p class="text-emoji-title">СТУДЕНТ</p>
+          <p class="text-emoji">
+            Профессия Веб-Верстальщика это отличная возможность для того,
+            чтобы построить карьеру в сфере IT. В конце курса у тебя уже будет
+            портфолио для трудоустройства
+          </p>
+        </div>
+      </div>
+
+      <div class="second-block-emoji">
+        <div class="emoji-cart-block">
           <div>
-            <p class="info-text">старт</p>
-            <p class="info-text-date">1 декабря</p>
+            <img class="emoji" src="./img/shame_emoji.png" alt="" />
           </div>
-          <div>
-            <p class="info-text">длительность</p>
-            <p class="info-text-date">2 месяца | 24 занятия</p>
-          </div>
+          <p class="text-emoji-title">НАЧИНАЮЩИЙ <br />ПРОГРАММИСТ</p>
+          <p class="text-emoji">
+            Тем, кто уже начал осваивать HTML и CSS, но хочет получить
+            структурированные знания и конструктивный фидбек
+          </p>
         </div>
 
-        <h1>HTML, CSS, JS</h1>
-
-        <p class="text-prof">
-          Верстальщик – это специалист, который кодит страницы web-сайтов,
-          разбивает текст на отдельные страницы, компонует его с иллюстрациями.
-          Он умеет создавать HTML-шаблоны для веб-сайтов и писать HTML-код,
-          знает, как графически оформить страницу и правильно расположить на ней
-          элемент, и знаком со стилями
-        </p>
-
-        <div class="btn-container">
-          <button class="first-button">Получить программу курса</button>
-          <button class="secondary">Записаться на курс</button>
+        <div class="emoji-cart-block">
+          <img class="emoji" src="./img/hearts_emoji.png" alt="" />
+          <p class="text-emoji-title">ХОЧЕШЬ ОБУЧИТЬСЯ НОВОЙ ПРОФЕССИИ</p>
+          <p class="text-emoji">
+            Веб-Верстальщик является одной из самых перспективных профессий на
+            сегодняшний день. Это идеальный старт для того чтобы начать
+            карьеру frontend разработчика.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Второй экран лендинга -->
+    <!-- Третий экран лендинга Таймер -->
 
-      <section>
-        <h2 class="title">Этот курс для тебя, если ты...</h2>
+    <section class="purpleBg">
+      <h3>10% скидка действует</h3>
 
-        <div class="first-block-emoji">
-          <div class="emoji-cart-block">
-            <img class="emoji" src="./img/beard_emoji.png" alt="" />
-            <p class="text-emoji-title">Backend разработчик</p>
-            <p class="text-emoji">
-              Если ты уже владеешь навыками Backend разработки, то изучив HTML,
-              CSS, JavaScript получишь базу, чтобы начать изучение frontend и
-              встать на путь full-stack разработчика
-            </p>
-          </div>
-
-          <div class="emoji-cart-block">
-            <img class="emoji" src="./img/glasses_emoji.png" alt="" />
-            <p class="text-emoji-title">СТУДЕНТ</p>
-            <p class="text-emoji">
-              Профессия Веб-Верстальщика это отличная возможность для того,
-              чтобы построить карьеру в сфере IT. В конце курса у тебя уже будет
-              портфолио для трудоустройства
-            </p>
-          </div>
+      <div class="timer">
+        <div class="timerElem">
+          <div class="value" id="timerHours">00</div>
+          <div class="desc">часов</div>
         </div>
+        <div class="timerElem">
+          <div class="value" id="timerMinets">00</div>
+          <div class="desc">минут</div>
+        </div>
+        <div class="timerElem">
+          <div class="value" id="timerSeconds">00</div>
+          <div class="desc">секунд</div>
+        </div>
+      </div>
+      <button class="secondary">Воспользоваться скидкой</button>
+    </section>
 
-        <div class="second-block-emoji">
-          <div class="emoji-cart-block">
-            <div>
-              <img class="emoji" src="./img/shame_emoji.png" alt="" />
+    <!-- Четвертый экран лендинга -->
+
+    <section>
+      <h2 class="title">А кто преподает?</h2>
+      <div class="bio">
+        <div class="coolTeacher">
+          <img src="./img/pic_Roman-Ickov.png" alt="Легендарный Юрий Максимович" />
+        </div>
+        <div class="bioText">
+          <h4> Юрий Каграманян </h4>
+          <p class="text-prof">
+            Практикующий преподаватель с опытом работы в сфере веб
+            программирования
+          </p>
+          <div class="experiense">
+            <div class="exp">
+              <img src="./img/Icon_case.png" alt="">
+              <span>Руководитель TEHNIKUM.CODING</span>
             </div>
-            <p class="text-emoji-title">НАЧИНАЮЩИЙ <br />ПРОГРАММИСТ</p>
-            <p class="text-emoji">
-              Тем, кто уже начал осваивать HTML и CSS, но хочет получить
-              структурированные знания и конструктивный фидбек
-            </p>
-          </div>
-
-          <div class="emoji-cart-block">
-            <img class="emoji" src="./img/hearts_emoji.png" alt="" />
-            <p class="text-emoji-title">ХОЧЕШЬ ОБУЧИТЬСЯ НОВОЙ ПРОФЕССИИ</p>
-            <p class="text-emoji">
-              Веб-Верстальщик является одной из самых перспективных профессий на
-              сегодняшний день. Это идеальный старт для того чтобы начать
-              карьеру frontend разработчика.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Третий экран лендинга Таймер -->
-
-      <section class="purpleBg">
-        <h3>10% скидка действует</h3>
-
-        <div class="timer">
-          <div class="timerElem">
-            <div class="value" id="timerHours">00</div>
-            <div class="desc">часов</div>
-          </div>
-          <div class="timerElem">
-            <div class="value" id="timerMinets">00</div>
-            <div class="desc">минут</div>
-          </div>
-          <div class="timerElem">
-            <div class="value" id="timerSeconds">00</div>
-            <div class="desc">секунд</div>
-          </div>
-        </div>
-        <button class="secondary">Воспользоваться скидкой</button>
-      </section>
-
-      <!-- Четвертый экран лендинга -->
-
-      <section>
-        <h2 class="title">А кто преподает?</h2>
-        <div class="bio">
-          <div class="coolTeacher">
-            <img src="./img/pic_Roman-Ickov.png" alt="Легендарный Юрий Максимович" />
-          </div>
-          <div class="bioText">
-            <h4> Юрий Каграманян </h4>
-            <p class="text-prof">
-              Практикующий преподаватель с опытом работы в сфере веб
-              программирования
-            </p>
-            <div class="experiense">
-                <div class="exp">
-                    <img src="./img/Icon_case.png" alt="">
-                    <span>Руководитель TEHNIKUM.CODING</span>
-                </div>
-                <div class="exp">
-                    <img src="./img/Icon_winning_cup.png" alt="">
-                    <span>Призер международных олимпиад</span>
-                </div>
+            <div class="exp">
+              <img src="./img/Icon_winning_cup.png" alt="">
+              <span>Призер международных олимпиад</span>
             </div>
-            <div class="experiense">
-                <div class="exp">
-                    <img src="./img/Icon_hearts.png" alt="">
-                    <span id="hyphenation-correction">Работал с компаниями Hi-Tech Bank, UGGI, 1C-Bitrix</span>
-                </div>
-                <div class="exp">
-                    <img src="./img/Icon_keyboard.png" alt="">
-                    <span>Более 10 лет опыта в программировании</span>
-                </div>
+          </div>
+          <div class="experiense">
+            <div class="exp">
+              <img src="./img/Icon_hearts.png" alt="">
+              <span id="hyphenation-correction">Работал с компаниями Hi-Tech Bank, UGGI, 1C-Bitrix</span>
+            </div>
+            <div class="exp">
+              <img src="./img/Icon_keyboard.png" alt="">
+              <span>Более 10 лет опыта в программировании</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Пятый экран лендинга -->
+    <!-- Пятый экран лендинга -->
 
-      <section class="info-education">
-        <h2 class="title">За 2 месяца ты станешь полноценным верстальщиком</h2>
+    <section class="info-education">
+      <h2 class="title">За 2 месяца ты станешь полноценным верстальщиком</h2>
 
-        <div class="first-block-emoji">
-          <div class="texst-block">
-            <p class="text-emoji-title">— Обучаем с нуля</p>
-            <p class="text-emoji">
-              Начнешь с самых основ и будешь двигаться от простого к сложному,
-              закрепляя каждый урок практикой
-            </p>
-          </div>
-          <div class="texst-block">
-            <p class="text-emoji-title">
-              — Помогаем лучшим студентам с трудоустройством
-            </p>
-            <p class="text-emoji">
-              Лучших студентов мы рекомендуем в ведущие веб-студии Узбекистана
-            </p>
-          </div>
+      <div class="first-block-emoji">
+        <div class="texst-block">
+          <p class="text-emoji-title">— Обучаем с нуля</p>
+          <p class="text-emoji">
+            Начнешь с самых основ и будешь двигаться от простого к сложному,
+            закрепляя каждый урок практикой
+          </p>
         </div>
-        <div class="second-block-emoji">
-          <div class="texst-block">
-            <p class="text-emoji-title">— 70% практики</p>
-            <p class="text-emoji">
-              Большая часть курса проходит в режиме live-коддинга, что позволяет
-              сразу применить знания на практике и сформировать портфолио
-            </p>
-          </div>
-          <div class="texst-block">
-            <p class="text-emoji-title">— Доводим до результата</p>
-            <p class="text-emoji">
-              В рамках курса за твоими успехами будут следить тьюторы, которые
-              ответят на любые возникающие вопросы и помогут усвоить материал
-            </p>
-          </div>
+        <div class="texst-block">
+          <p class="text-emoji-title">
+            — Помогаем лучшим студентам с трудоустройством
+          </p>
+          <p class="text-emoji">
+            Лучших студентов мы рекомендуем в ведущие веб-студии Узбекистана
+          </p>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="second-block-emoji">
+        <div class="texst-block">
+          <p class="text-emoji-title">— 70% практики</p>
+          <p class="text-emoji">
+            Большая часть курса проходит в режиме live-коддинга, что позволяет
+            сразу применить знания на практике и сформировать портфолио
+          </p>
+        </div>
+        <div class="texst-block">
+          <p class="text-emoji-title">— Доводим до результата</p>
+          <p class="text-emoji">
+            В рамках курса за твоими успехами будут следить тьюторы, которые
+            ответят на любые возникающие вопросы и помогут усвоить материал
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <script src="./script.js"></script>
 <<<<<<< HEAD
+    
+<<<<<<< HEAD
+=======
+=======
+    <!-- Седьмой экран лендинга -->
+
+    <section>
+      <h2>7 section</h2>
+      <h2>Coming soon...</h2>
+    </section>
+
+    <!-- <section class="diploma">
+
+      <div class="diplomaImg">
+        <img src="./img/Diploma.png" alt="">
+      </div>
+
+      <div>
+        <h2 class="diploma-title">
+          диплом об окончании курса
+        </h2>
+      </div>
+
+      <div>
+        <span class="diploma-text">Он дополнит твое портфолио и выгодно выделит тебя на собеседовании в компанию
+          мечты</span>
+      </div> -->
+
+
+    </section>
+
+    <!-- Восьмой экран лендинга -->
+
+    <section id="hhJob">
+      <h2 class="title-base">Сколько может зарабатывать Веб-Верстальщик?</h2>
+
+      <p class="text-base">По данным сайта hh.uz большие компании готовы платить начинающим Верстальщикам <span>от
+          300$</span>. Тебе лишь нужно
+        набираться опыта и твой доход будет расти с каждым разом . А мы готовы тебе помочь в этом!</p>
+
+      <div id="hhImg">
+        <img src="./img/pic_hh.png" alt="">
+      </div>
+
+    </section>
+
+    <!-- Девятый экран лендинга -->
+
+
+    <section id="present-mine">
+      <h2 class="title-base">Кроме этого тебя ждут:</h2>
+
+      <div class="present">
+
+        <div class="presentImg">
+          <img src="./img/pic_student-box.png" alt="">
+        </div>
+
+        <div class="present-text-container">
+          <p class="present-text">150$ от наших партнёров</p>
+
+          <p class="present-text">Компьютер для каждого студента со всеми необходимыми программами</p>
+
+          <p class="present-text">Набор студента - приветственное письмо с ссылкой на закрытую группу, канцелярские
+            принадлежности, стикеры и
+            партнерские промо-коды</p>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+  </main>
+>>>>>>> 6311439 (landing 8 and 9 section)
+
+
+
+
+<<<<<<< HEAD
+    <p>hello</p>
+>>>>>>> 3408509 (reconnection)
+  
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
 =======
 
 
 
+  <script src="./script.js"></script>
 
-    <p>hello</p>
->>>>>>> 3408509 (reconnection)
-  </body>
+</body>
+
 </html>
+>>>>>>> 6311439 (landing 8 and 9 section)
