@@ -360,9 +360,9 @@ section>.second-block-emoji{
                                     /* Девятый экран лендинга */
 
 
-#present-mine{
+/* #present-mine{
 
-}
+} */
 
 #present-mine h2{
     margin-bottom: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
