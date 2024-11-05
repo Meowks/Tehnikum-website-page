@@ -29,6 +29,7 @@
     background-repeat: no-repeat;
     background-position: top 121px right 58px;
     background-size: 30vw;
+    margin-top: 30px;
     
 }
 
@@ -67,7 +68,6 @@ h1{
     line-height: 109%;
     font-family: "Chava";
     margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)));
-
 }
 
 .text-prof {
@@ -94,9 +94,13 @@ button{
     border-color: #6E3ABA;
     background-color: #6E3ABA;
     color: white;
+    cursor: pointer;
+    border: none;
 }
 
 button.secondary{
+    border: 1px;
+    border-style: solid;
     color: #6E3ABA;
     background-color: white;
 }
@@ -268,10 +272,6 @@ h3 {
 }
 
 
-
-
-
-
                                     /* Пятый экран лендинга */
 
 
@@ -294,44 +294,73 @@ section>.second-block-emoji{
     gap: calc(30px + (52 - 30) * ((100vw - 375px) / (1280 - 375))) 120px;
 }
 
+                                    /* Шестой экран лендинга */
+
+.programBorder{
+    border-style:solid;
+    border-width: 2px;
+    padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+.lessons{
+    list-style: none;
+    width: calc(280px + (949 - 280) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(24px + (40 - 24) * ((100vw - 375px) / (1280 - 375)));
+    
+}
+.lesson{
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 138%;
+    border-bottom-style: solid;
+    border-width: 1px;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    
+}
+.indents{
+    padding-left: calc(19px + (64 - 19) * ((100vw - 375px) / (1280 - 375)));
+    padding-right: calc(28px + (52 - 28) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.desktopButtom{
+    display: block;
+    text-align: center;
+    margin: 34px;
+}
+.mobileButtom{
+    text-align: center;
+    margin-top: 30px;
+    display: none;
+}
+
+
 
                                     /* Седьмой экран лендинга */
 
 .diploma{
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 30% 50%;
+    grid-template-columns: calc(327px + (430 - 327) * ((100vw - 375px) / (1280 - 375))) 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-
-.diplomaImg{   
-    flex-basis: 327px;
-    flex-grow: 1;
-    max-width: 430px;
+.diploma img{
+    grid-row: 1/3;
+    width: calc(328px + (430 - 328) * ((100vw - 375px) / (1280 - 375)));
 }
-
-.diplomaImg img{
-    width: 100%;
-}
-
-.diploma-title{
-    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
-    font-weight: 500;
-    line-height: 117%;
+.diploma h2{
     text-transform: uppercase;
     width: calc(328px + (578 - 328) * ((100vw - 375px) / (1280 - 375)));
-    height: calc(120px + (136 - 120) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 500;
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 117%;
 }
-
- 
-#diploma-text{
+.diploma span{
     font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     line-height: 137%;
     width: calc(328px + (514 - 328) * ((100vw - 375px) / (1280 - 375)));
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
+
 
                                     /* Восьмой экран лендинга */
  
@@ -360,9 +389,6 @@ section>.second-block-emoji{
                                     /* Девятый экран лендинга */
 
 
-/* #present-mine{
-
-} */
 
 #present-mine h2{
     margin-bottom: calc(20px + (30 - 20) * ((100vw - 375px) / (1280 - 375)));
@@ -400,6 +426,147 @@ section>.second-block-emoji{
     font-size: calc(18px + (21 - 18) * ((100vw - 375px) / (1280 - 375)));
     line-height: 117%;
 }
+
+                                    /* Десятый экран лендинга */
+                                    
+.reviewSection h2{
+    text-transform: uppercase;
+    margin-bottom: calc(20px + (40 - 20) * ((100vw - 375px) / (1280 - 375)))
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 20px;
+
+}
+.review{
+    background-color: #F0F7FD;
+    border-radius: 12px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 335px;
+    padding-left: calc(15px + (20 - 15) * ((100vw - 375px) / (1280 - 375)));
+    padding-right: calc(16px + (20 - 16) * ((100vw - 375px) / (1280 - 375)));
+    padding-top: calc(57px + (54 - 57) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(49px + (44 - 49) * ((100vw - 375px) / (1280 - 375)));
+    position: relative;
+}
+.iconYoutube{
+    width: 38px;
+    margin-bottom: 12px;
+}
+.previewText{
+    font-size: 21px;
+    line-height: 138%;
+    margin-bottom: 30px;
+}
+.photoStudents{
+    border-radius: 100px;
+    width: 73px;
+    margin-right: 14px;
+}
+.photoStudentsContainer{
+    position: absolute;
+    bottom: 44px;
+    display: flex;
+
+}
+.review span{
+    width: 169px;
+    font-size: 21px;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+                                    /* Двенадцатый экран лендинга */
+
+.us h2{
+    margin-bottom: calc(34px + (80 - 34) * ((100vw - 375px) / (1280 - 375)));
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px 97px;
+
+    align-items: end;
+}
+.aboutUs img{
+    width: 110px;
+}
+.aboutUs h5 {
+    font-size: calc(22px + (27 - 22) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+    width: calc(328px + (426 - 328) * ((100vw - 375px) / (1280 - 375)));
+
+    grid-row: 2/3;
+}
+
+.stat {
+    font-size: calc(34px + (58 - 34) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 118%;
+}
+
+span{
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 710px) {
+    .diploma{
+        grid-template-columns: 1fr;
+    }
+    .diploma img{
+        grid-row: 2/3;
+    }
+
+    .aboutUs{
+        grid-template-columns: 1fr;
+    }
+
+    .desktopButtom{
+        display: none;
+    }
+    .mobileButtom{
+        display: block;
+    }
+    .borderNone{
+        border: none;
+        margin-bottom: 0;
+    }
+}
+
+/* @media (max-width: 850px) {
+  .review{
+    min-width: 355px;
+  }  
+}
+@media (max-width: 450px) {
+    .review{
+        max-width: 328px;
+    }
+} */
 
 
 
@@ -444,3 +611,5 @@ section>.second-block-emoji{
         margin-bottom: 20px;
     }
 } */
+
+

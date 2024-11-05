@@ -1,6 +1,13 @@
+function nextDay() {
+    let tomorow = new Date()
+    tomorow.setDate( tomorow.getDate() + 1)
+    tomorow.setHours( 0, 0, 0, 0)
+    return tomorow
+}
+
 function calcTimer() {
     let today = new Date()
-    let saleDeadline = new Date(2024, 10, 5)
+    let saleDeadline = nextDay()
     let delta = (saleDeadline - today)/1000
     delta = Math.trunc(delta)
 
