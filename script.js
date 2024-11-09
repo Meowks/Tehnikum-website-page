@@ -36,3 +36,15 @@ function twoDigits(num) {
         return num
     }
 }
+
+
+
+function myFunction() {
+    let scriptDesk = document.getElementById('sliderDesktop')
+    let scriptMobi = document.getElementById('sliderMobile')
+
+    if (screen.width >= 1050) return;
+    
+
+    }
+
